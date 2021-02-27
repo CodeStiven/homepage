@@ -41,13 +41,13 @@ body {
     width: 150px;
     height: 150px;
   }
-  li {
+  .navigation__list {
     list-style: none;
     display: inline-flex;
     justify-content: space-around;
     margin: 0 20px;
   }
-  a {
+  .navigation__link {
     text-decoration: none;
     color: $text-color;
   }
@@ -104,13 +104,14 @@ body {
   justify-self: flex-start;
   align-items: flex-end;
   .unorder {
+    display: flex;
     list-style: none;
     display: flex;
     margin-left: 50px;
   }
   .list__item {
     color: #2699bc;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
 
