@@ -1,0 +1,97 @@
+// variables
+// background
+$blue: #b3e3ef;
+$white: #f4fdfc;
+$text-color: #2699bc;
+$font-family: "Poppins", sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background: url("/dist/assets/img/Artwork.svg") no-repeat,
+    linear-gradient(
+      0deg,
+      rgba(244, 253, 252, 1) 32%,
+      rgba(179, 227, 239, 1) 32%
+    );
+  background-size: 40%;
+  background-position-y: 60%;
+  background-position-x: 90%;
+  font-family: $font-family;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;
+  font-size: 20px;
+  font-weight: 500;
+
+  .logo {
+    display: flex;
+    width: 150px;
+    height: 150px;
+  }
+  li {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 0 20px;
+  }
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.container {
+  display: flex;
+  width: 700px;
+  height: 660px;
+  margin-left: 400px;
+  .main__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 80px;
+    text-align: left;
+    margin-top: 30px;
+  }
+  .main__paragraph {
+    text-transform: uppercase;
+    color: $text-color;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7rem;
+  }
+  .input__search {
+    padding: 20px;
+    border: none;
+    background-color: #f4fdfc;
+    outline: none;
+    &::placeholder {
+      color: #b3e3ef;
+      //   font-family: $font-family;
+    }
+  }
+  .label__go {
+    display: inline-flex;
+    padding: 15px;
+    height: 57px;
+    margin-left: 0;
+    background-color: #f03e30;
+    color: #f4fdfc;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
